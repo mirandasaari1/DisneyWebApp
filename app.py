@@ -71,9 +71,9 @@ def randomizeTweets():
     
 #randomize images
 def randomizeImages():
-    #getty_key = os.getenv("getty_key")
+    getty_key = os.getenv("getty_key")
     #define header
-    my_headers = {'Api-key': 'vvdp68vnrgun32p39z5q8gmg'}
+    my_headers = {'Api-key': getty_key}
     resolution  = {'fields': 'comp'}
     r = requests.get('https://api.gettyimages.com:443/v3/search/images/editorial?phrase=Disney%20Characters&sort_order=most_popular', headers=my_headers, params=resolution)
     #json data
