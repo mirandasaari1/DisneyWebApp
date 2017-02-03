@@ -27,7 +27,7 @@ def index():
     consumer_secret = 	os.getenv("Consumer_secret")
     access_token = 	os.getenv("Access_token")
     access_token_secret = 	os.getenv("Access_secret")
-    getty_key = os.getenv("getty_key")
+    #getty_key = os.getenv("getty_key")
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
@@ -60,7 +60,6 @@ def randomizeTweets():
     consumer_secret = 	os.getenv("Consumer_secret")
     access_token = 	os.getenv("Access_token")
     access_token_secret = 	os.getenv("Access_secret")
-    getty_key = os.getenv("getty_key")
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
@@ -72,9 +71,9 @@ def randomizeTweets():
     
 #randomize images
 def randomizeImages():
-    getty_key = os.getenv("getty_key")
+    #getty_key = os.getenv("getty_key")
     #define header
-    my_headers = {'Api-key': 'gett_key'}
+    my_headers = {'Api-key': 'vvdp68vnrgun32p39z5q8gmg'}
     resolution  = {'fields': 'comp'}
     r = requests.get('https://api.gettyimages.com:443/v3/search/images/editorial?phrase=Disney%20Characters&sort_order=most_popular', headers=my_headers, params=resolution)
     #json data
