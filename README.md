@@ -24,7 +24,7 @@ Evaluation:
 5 points: Documentation
 1 point: README.md is in the root of the repository on Github
 1 point: Theme is explained in readme file
-The theme of my project is "disney".
+The theme of my project is "disney" includes everything involving disney!
 
 1 point: How searches reflect theme is explained in readme file
 The theme is shown with returns having to do with disney quotes for the tweets, some from characters and some from Walt himself.
@@ -32,7 +32,8 @@ The pictures are a variety of disney characters, pictures, and of Walt himself.
 
 1 point: Acknowledgement of known problems, if they exist, in readme file
 simple design, can only go so far with the project. Occasionally get an "out or range" page upon reload, but returns an
-image with another reload. Only encountered problem once.
+image with another reload. Only encountered problem once. Images do tend to repeat every once and awhile, tried playing around using
+different phrases and such, but still got some repeats.
 
 1 point: Description of how to improve in readme file
 Play around with the CSS a little more, spend more time testing and see if it runs flawlessly. Althought did run fine with many, many

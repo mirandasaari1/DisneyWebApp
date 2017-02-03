@@ -9,14 +9,6 @@ import json
 
 app = flask.Flask(__name__)
 
-#consumer_key = 	"bgsi3dhSOFgSv7smGbbqviIT9"
-#consumer_secret = 	"tqg7y6GjOSzkTV3i0g56XkeORUaVanj7w0OCVSZmz694bzzro9"
-#access_token = 	"399817303-XsV9PzDJ83iHtjYWNwjxEiHjOIg7BRI1hkoM2vNl"
-#access_token_secret = 	"MsUvIwYuFkuLZZYRZijydLJQeU96bY8wJEuMPdchVRVDq"
-
-#auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-#auth.set_access_token(access_token, access_token_secret)
-#api = tweepy.API(auth)
     
 @app.route('/')
 
@@ -27,12 +19,10 @@ def index():
     consumer_secret = 	os.getenv("Consumer_secret")
     access_token = 	os.getenv("Access_token")
     access_token_secret = 	os.getenv("Access_secret")
-    #getty_key = os.getenv("getty_key")
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth)
-    
     
     #getty image
     image_url = randomizeImages()
@@ -52,7 +42,6 @@ def index():
     at_link = "twitter.com/" + user + "/status/" + tweetIDString
   
     return flask.render_template("index.html", image_url=image_url, tweet=tweet, user=user, at_link=at_link)
-    #config vars key + os.getenv("")
     
     #randomizes tweets    
 def randomizeTweets():
